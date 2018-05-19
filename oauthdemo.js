@@ -1,5 +1,5 @@
 hello.init({
-  google: "430428212432-f34jau77k2bipkvrmeefn96ks0e04iu1.apps.googleusercontent.com"
+  google: "Client ID Here"
 });
 
 hello.on('auth.login', function (auth) {
