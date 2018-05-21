@@ -1,5 +1,5 @@
 hello.init({
-  google: "Client ID Here"
+  google: "430428212432-f34jau77k2bipkvrmeefn96ks0e04iu1.apps.googleusercontent.com"
 });
 
 hello.on('auth.login', function (auth) {
@@ -21,5 +21,3 @@ hello.on('auth.logout', function () {
   var lab = document.getElementById("pic_and_greet");
   if (lab != null) document.body.removeChild( lab );
 });
-
-console.log('test');
