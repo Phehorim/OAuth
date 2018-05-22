@@ -1,11 +1,8 @@
 hello.init({
-  google: "430428212432-f34jau77k2bipkvrmeefn96ks0e04iu1.apps.googleusercontent.com"
+  google: "client id here"
 });
 
 hello.on('auth.login', function (auth) {
-
-  // add a greeting and access the thumbnail and name from
-  // the authorized response
 
   hello(auth.network).api('/me').then(function (resp) {
     var lab = document.createElement("div");
@@ -14,8 +11,6 @@ hello.on('auth.login', function (auth) {
     document.body.appendChild(lab);
   });
 });
-
-// remove the greeting when we log out
 
 hello.on('auth.logout', function () {
   var lab = document.getElementById("pic_and_greet");
